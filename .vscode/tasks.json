@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch:ts",
+      "type": "npm",
+      "script": "watch:ts",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "watch:all",
+      "dependsOn": ["watch:ts"],
+      "problemMatcher": []
+    }
+  ]
+}
