@@ -24,4 +24,8 @@ it('测试', function () {
   插入字典树(obj, 'nihao')
   var c = 查询字典树(obj, 'ni')
   断言相等(c, ['ni', 'nih', 'niha', 'nihao'])
+
+  var obj = 创建字典树()
+  var c = 查询字典树(obj, 'ni')
+  断言相等(c, [])
 })

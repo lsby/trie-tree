@@ -23,11 +23,12 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/mocha": "^9.1.0",
-    "mocha": "^9.2.2",
     "husky": "^7.0.4",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "open-cli": "^7.1.0",
     "typescript": "^4.7.4"
   }
 }
