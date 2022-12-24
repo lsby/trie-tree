@@ -14,16 +14,15 @@ it('测试', function () {
   插入字典树(obj, 'ni3')
   插入字典树(obj, 'ni45')
   var c = 查询字典树(obj, 'ni')
-  断言相等(c, ['ni1', 'ni2', 'ni3', 'ni45'])
+  断言相等(c, ['ni', 'ni1', 'ni2', 'ni3', 'ni45'])
 
   var obj = 创建字典树()
   插入字典树(obj, 'n')
-  插入字典树(obj, 'ni')
   插入字典树(obj, 'nih')
   插入字典树(obj, 'niha')
   插入字典树(obj, 'nihao')
   var c = 查询字典树(obj, 'ni')
-  断言相等(c, ['ni', 'nih', 'niha', 'nihao'])
+  断言相等(c, ['nih', 'niha', 'nihao'])
 
   var obj = 创建字典树()
   var c = 查询字典树(obj, 'ni')
